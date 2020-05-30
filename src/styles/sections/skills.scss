@@ -1,0 +1,141 @@
+.skills-container {
+  cursor: pointer;
+  padding-top: 25px;
+  padding-bottom: 70px;
+  cursor: initial;
+  background-image:  linear-gradient(#ffffff 60%, $pink-shade 83%, $blue-shade 100%, #ffffff 0%);
+  background-size: auto;
+}
+
+.title {
+  font-family: 'Righteous', cursive;
+  font-size: 50px;
+}
+
+.introduction {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+
+  p {
+    margin-top: -40px; // !
+    text-align: center;
+    font-size: 18px; // !
+    font-family: 'Raleway', sans-serif;
+    width: 600px; // !
+    font-weight: 600;
+  }
+}
+
+.image-container {
+  clip-path: polygon(20% 0%, 77% 0, 100% 20%, 100% 57%, 80% 82%, 19% 82%, 0 59%, 0% 20%);
+
+  img {
+    width: 265px;
+    clip-path: polygon(20% 0%, 77% 0, 100% 20%, 100% 57%, 80% 82%, 19% 82%, 0 59%, 0% 20%);
+  }
+}
+
+.skills-box {
+  background: #fff;
+  height: 725px; // !
+  width: 1000px;
+  margin: 40px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+  border: 1px solid $blue-shade;
+  border-radius: 45px;
+  box-shadow: 0px 5px 5px grey;
+
+  .skill:not(:last-child) {
+    border: 1px solid;
+    border-color: transparent $blue-shade  transparent transparent;
+  }
+}
+
+.divider {
+  border: 0.5px solid $blue-shade;
+  width: 119%;
+  margin-bottom: 5px;
+}
+
+.skill-details-container {
+  height: 100%;
+  display: grid;
+  grid-template-rows: 20% 25% 55%;
+  margin-top: 30px;
+}
+
+.skill-detail-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 20px;
+}
+
+.skill-title {
+  font-family: 'Raleway', sans-serif;
+  margin: 20px 0px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.skill-detail {
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  text-align: center;
+}
+
+.heading {
+  font-size: 18px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  margin-bottom: 0px;
+  color: $blue-shade;
+}
+
+.list {
+  list-style: none;
+  padding: 0px;
+}
+
+.skill-ranking {
+  width: 85%;
+}
+
+.newline-list {
+  li {
+    margin: 5px 0px;
+  }
+}
+
+.comma-list {
+  display: inline;
+
+  li {
+    display: inline;
+  }
+  
+  li:after {
+    content: ", ";
+  }
+
+  li:last-child:after {
+    content: "";
+  }
+}
+
+.stars {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}

@@ -1,0 +1,35 @@
+.floating-button-container {
+  position: fixed;
+  right: 0px;
+  top: 0px;
+  height: 200px;
+  width: 200px;
+  cursor: pointer;
+  z-index: 9999;
+}
+
+.floating-button {
+  display: block;
+  position: absolute;
+  font-family: 'Righteous', cursive;
+  color: black;
+  background-color: #fff;
+  box-shadow: 0px 5px 15px #403f3f96;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all .2s ease-in-out;
+  transform: rotate(45deg);
+  transform-origin: bottom left;
+  font-size: 13px;
+  width: 210px;
+  top: -25px;
+  height: 25px;
+  line-height: 25px;
+  right: -61px;
+
+  &:hover {
+    color: black;
+    text-decoration: none;
+    font-size: 13.5px;
+  }
+}

@@ -1,0 +1,27 @@
+html {
+  scroll-behavior: smooth;
+}
+
+$white-shade: #e6e6e6;
+$blue-shade: #01A2CE;
+$pink-shade: #d06ba58c;
+$grey-shade: #bdbdbd26;
+$background-color: #D06BA5;
+
+// Components
+@import "components/floatingButton";
+
+// Sections
+@import "sections/intro";
+@import "sections/skills";
+@import "sections/projects";
+
+// Shared styles
+.title {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@import "~bootstrap/scss/bootstrap.scss";
