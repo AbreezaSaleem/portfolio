@@ -49,11 +49,20 @@
   border: 1px solid $blue-shade;
   border-radius: 45px;
   box-shadow: 0px 5px 5px grey;
+  opacity: 0;
+  transform: rotateY(-180deg);
 
   .skill:not(:last-child) {
     border: 1px solid;
     border-color: transparent $blue-shade  transparent transparent;
   }
+}
+
+.skills-box.is-visible {
+  transform: rotateY(0deg);
+  opacity: 1;
+  transition: opacity 2s, transform 2s;
+  transform-style: preserve-3d;
 }
 
 .divider {
