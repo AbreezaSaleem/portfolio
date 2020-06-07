@@ -19,6 +19,24 @@ $background-color: #D06BA5;
 @import "sections/projects";
 
 // Shared styles
+
+.introduction {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+
+  p {
+    margin-top: -40px; // !
+    text-align: center;
+    font-size: 18px; // !
+    font-family: 'Raleway', sans-serif;
+    width: 600px; // !
+    font-weight: 600;
+  }
+}
+
 .title {
   width: 100%;
   display: flex;

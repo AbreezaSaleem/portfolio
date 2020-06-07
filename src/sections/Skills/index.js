@@ -3,7 +3,7 @@ import React from 'react';
 import SkillsBox from './SkillsBox';
 import me from '../../images/me.jpeg';
 
-const Skills = props => {
+const Skills = () => {
 
   return (
     <div id="skills" className="skills-container">
