@@ -2,17 +2,185 @@
   padding-top: 25px;
   min-height: 100vh;
   height: 100%;
+  background-color: $grey-shade;
 }
 
 .projects-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  max-height: 0;
+  max-height: 0px;
   overflow: hidden;
   margin: 40px auto;
-  width: 90%;
+  width: 70%;
   text-align: center;
+}
+
+.projects-list.is-visible {
+  max-height: 2000px; // !
+  transition: max-height 1.5s ease-in;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: $pink-shade;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.project {
+  padding: 10px 40px;
+  position: relative;
+  width: 50%;
+  cursor: pointer;
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+/* The circles on the timeline */
+.project::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -12px;
+  background-color: white;
+  border: 4px solid $yellow-shade;
+  top: 20px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the project to the left */
+.left {
+  left: 0;
+}
+
+/* Place the project to the right */
+.right {
+  left: 50%;
+}
+
+/* Add arrows to the left project (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent #bfbfbf8a;
+}
+
+/* Add arrows to the right project (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #bfbfbf8a transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -12px;
+}
+
+/* The actual content */
+.content {
+  position: relative;
+  border-radius: 6px;
+  padding: 20px 30px;
+  box-shadow: 0px 0px 9px #888888;
+  background: #f7f5f56e;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+  /* Place the timelime to the left */
+  .timeline::after {
+    left: 31px;
+  }
+  
+  /* Full-width containers */
+  .project {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+  
+  /* Make sure that all arrows are pointing leftwards */
+  .project::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+    left: 15px;
+  }
+  
+  /* Make all right containers behave like the left ones */
+  .right {
+    left: 0%;
+  }
+}
+
+.project-title {
+  text-align: center;
+  margin: auto;
+  font-size: 18px; // !
+  font-weight: 600;
+  padding-bottom: 10px;
+  color: $blue-shade;
+}
+
+.project-description {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-word;
+  font-size: 15.5px; // !
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+
+}
+
+.tags-project {
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.tags-container {
+  width: fit-content;
+  margin: 0 auto;
+  padding: 10px 0px;
+}
+
+.tag {
+  font-size: 14px;
+  border: 1px black solid;
+  padding: 2px 7px;
+  border-radius: 10px;
 }
 
 .overlay {
@@ -31,27 +199,6 @@
   height: 100%;
 }
 
-.projects-list.is-visible {
-  max-height: 1000px; // !
-  transition: max-height 1s ease-in;
-}
-
-.project {
-  cursor: pointer;
-  flex: 0 0 calc(33.33% - 20px);
-  display: grid;
-  grid-template-rows: 20% 80%;
-  background: $grey-shade;
-  position: relative;
-  border-radius: 15px;
-  margin: 10px;
-  height: 235px; // !
-  overflow: hidden;
-  font-family: 'Raleway', sans-serif;
-  font-size: 20px;
-  padding: 15px;
-}
-
 .slide-up {
   color: black;
   position: absolute;
@@ -65,45 +212,21 @@
   padding: 20px;
 }
 
-
-.project-title {
-  margin: auto;
-  font-size: 18px; // !
-  font-weight: 600;
-}
-
-.project-description {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  word-break: break-word;
-  font-size: 17px; // !
-}
-
 .learn-more-btn {
-  font-family: 'Righteous', cursive;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
   background: transparent;
-  height: 60px;
-  width: 190px;
-  color: $white-shade;
-  font-size: 23px;
-  transition: 0.5s;
-  border: 1px solid $white-shade;
+  color: #fff;
+  height: 40px;
+  width: 105px;
+  font-size: 15px;
+  transition: 1s;
+  border: 1px solid $blue-shade;
+  background-color: $blue-shade;
+  border-radius: 10px;
 
   &:hover {
-    background-color: $blue-shade;
-    border-color: $white-shade;
+    background-color: #1384a2;
+    border-color: #1384a2;
   }
-}
-
-.tags-container {
-  width: fit-content;
-  margin: 0 auto;
-  padding: 10px 0px;
-}
-
-.tag {
-  font-size: 14px;
-  border: 1px black solid;
-  padding: 2px 7px;
-  border-radius: 10px;
 }
