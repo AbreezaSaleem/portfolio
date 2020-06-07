@@ -18,10 +18,6 @@
   transition: max-height 1.5s ease-in;
 }
 
-.timeline-container {
-
-}
-
 /* The actual timeline (the vertical ruler) */
 .timeline {
   position: relative;
@@ -97,6 +93,7 @@
   border-radius: 6px;
   padding: 15px 15px 10px 15px;
   background-color: #fbfbfb;
+  box-shadow: 5px 4px 15px #88888647;
 }
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
