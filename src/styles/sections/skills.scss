@@ -3,7 +3,7 @@
   padding-top: 25px;
   padding-bottom: 70px;
   cursor: initial;
-  background-image:  linear-gradient(#ffffff 60%, $pink-shade 83%, $blue-shade 100%, #ffffff 0%);
+  background-image: linear-gradient(#ffffff 60%, $background-color-orange 83%, $background-color-pink 100%, #ffffff 0%);
   background-size: auto;
 }
 
@@ -24,22 +24,23 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: minmax(100px, auto);
-  border: 1px solid $blue-shade;
+  border: 1px solid #bfbcbc9e;
   border-radius: 45px;
   box-shadow: 0px 5px 5px grey;
   opacity: 0;
   transform: rotateY(-180deg);
+  backface-visibility: hidden;
 
   .skill:not(:last-child) {
     border: 1px solid;
-    border-color: transparent $blue-shade  transparent transparent;
+    border-color: transparent #bfbcbc9e  transparent transparent;
   }
 }
 
 .skills-box.is-visible {
   transform: rotateY(0deg);
   opacity: 1;
-  transition: opacity 2s, transform 2s;
+  transition: opacity 2s, transform 1s;
   transform-style: preserve-3d;
 }
 

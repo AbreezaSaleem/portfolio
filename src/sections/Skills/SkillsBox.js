@@ -12,7 +12,6 @@ const SkillsBox = () => {
           <div key={`skill-${index1}`} className="skill">
             {currentSkill.logo}
             <div className="skill-title">{currentSkill.title}</div>
-            {/* <div className="divider" /> */}
             <div className="skill-details-container">
               <div className="skill-detail-container"><p className="skill-detail">{currentSkill.details}</p></div>
               <div className="skill-detail-container">
