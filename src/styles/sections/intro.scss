@@ -38,7 +38,7 @@
   cursor: default;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-image: linear-gradient(90deg, rgba(235,108,153,1) 0%, rgba(226,209,125,1) 22%, rgba(120,212,123,1) 55%, rgba(242,174,126,1) 75%, rgba(237,94,147,1) 100%);
+  background-image: linear-gradient(90deg, #e02929 0%, #4d47f1 27%, #0493a7 64%, #32880d 83%, #e02929 100%);
   background-size: 200vw 120px;
   animation: slide 6s infinite;
   font-size: 100px;
@@ -56,8 +56,8 @@
   border: 1px solid $white-shade;
 
   &:hover {
-    background-color: $green-shade;
-    border-color: $green-shade;
+    background-color: $blue-shade;
+    border-color: $blue-shade;
   }
 }
 

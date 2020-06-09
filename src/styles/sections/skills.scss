@@ -3,7 +3,7 @@
   padding-top: 25px;
   padding-bottom: 70px;
   cursor: initial;
-  background-image: linear-gradient(#ffffff 60%, $background-color-orange 83%, $background-color-pink 100%, #ffffff 0%);
+  background-image: linear-gradient(#ffffff 60%, #0f7cfdcc 80%, #86418a 100%, #ffffff 0%);
   background-size: auto;
 }
 
@@ -97,6 +97,8 @@
 }
 
 .newline-list {
+  margin-top: 1em;
+
   li {
     margin: 5px 0px;
   }
