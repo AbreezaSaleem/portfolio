@@ -16,6 +16,11 @@ const isElementInViewport = el => {
   );
 }
 
+const showNavbar = () => {
+  return document.body.scrollTop > 100 || document.documentElement.scrollTop > 100
+}
+
 export {
-  isElementInViewport
+  isElementInViewport,
+  showNavbar
 }

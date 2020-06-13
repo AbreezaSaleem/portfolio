@@ -7,7 +7,7 @@ const Intro = props => {
   }
 
   return (
-    <div className="intro-container">
+    <div id="home" className="intro-container">
       <h3>Hi, I am</h3>
       <h1 className="name">ABREEZA SALEEM</h1>
       <h3>A full-stack web developer 🚀</h3>

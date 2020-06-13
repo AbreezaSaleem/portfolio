@@ -3,18 +3,21 @@ import AOS from 'aos';
 import 'aos/dist/aos.css'; 
 
 import FloatingButton from './components/FloatingButton';
+import Navbar from './components/Navbar';
 import Intro from './sections/Intro';
 import Skills from './sections/Skills';
 import Projects from './sections/Projects';
 
-import { isElementInViewport } from './utils';
+import { isElementInViewport, showNavbar } from './utils';
 
 AOS.init({ once: true });
 
 function App() {
   useEffect(() => {
-    const scroll = window.requestAnimationFrame ||
-      function(callback){ window.setTimeout(callback, 1000/60)};
+
+    // * animate element when it comes into view
+    const showElemOnScroll = window.requestAnimationFrame ||
+      function(callback) { window.setTimeout(callback, 1000/60) };
 
     const elementsToShow = document.querySelectorAll('.show-on-scroll');
 
@@ -24,10 +27,26 @@ function App() {
           element.classList.add('is-visible');
         }
       });
-      scroll(loop);
+      showElemOnScroll(loop);
     }
 
     loop();
+
+
+    // * show navbar when user scrolls down
+    const showNavbarOnScroll = window.requestAnimationFrame ||
+      function(callback) { window.setTimeout(callback, 1000/60) };
+
+    function scrollNavbar() {
+      if (showNavbar()) {
+        document.getElementsByClassName("topnav-container")[0].style.top = "0";
+      } else {
+        document.getElementsByClassName("topnav-container")[0].style.top = "-55px";
+      }
+      showNavbarOnScroll(scrollNavbar);
+    }
+    
+    scrollNavbar();
 
     return (()=> {
       window.cancelAnimationFrame();
@@ -37,6 +56,7 @@ function App() {
   return (
     <>
     <FloatingButton />
+    <Navbar />
     <div>
       <Intro />
       <Skills />
