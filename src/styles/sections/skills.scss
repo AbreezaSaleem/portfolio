@@ -1,14 +1,27 @@
+$title-shade: #dcdcdc;
+$border-shade: #2f2e2e;
+$text-shade: #d2cece;
+
 .skills-container {
   cursor: pointer;
   padding-top: 25px;
   padding-bottom: 70px;
   cursor: initial;
-  background-image: linear-gradient(#ffffff 60%, #3c96ffbf 80%, #86418ad6 100%, #ffffff 0%);
+  background-image: linear-gradient(#353535 60%, #3c96ffbf 80%, #86418ad6 100%, #ffffff 0%);
   background-size: auto;
+}
+
+.title-color {
+  color: $title-shade !important;
 }
 
 .image-container {
   clip-path: polygon(20% 0%, 77% 0, 100% 20%, 100% 57%, 80% 82%, 19% 82%, 0 59%, 0% 20%);
+  width: 274px;
+  height: 364px;
+  background: #4e4e4e8a;
+  display: flex;
+  justify-content: center;
 
   img {
     width: 265px;
@@ -17,30 +30,29 @@
 }
 
 .skills-box {
-  background: #fff;
+  background: #272727d1;
   height: 725px; // !
   width: 1000px;
   margin: 40px auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: minmax(100px, auto);
-  border: 1px solid #bfbcbc9e;
+  border: 1px solid $border-shade;
   border-radius: 45px;
-  box-shadow: 0px 5px 5px grey;
+  box-shadow: 0px 5px 5px #000;
   opacity: 0;
-  transform: rotateY(-180deg);
   backface-visibility: hidden;
+  color: $text-shade;
 
   .skill:not(:last-child) {
     border: 1px solid;
-    border-color: transparent #bfbcbc9e  transparent transparent;
+    border-color: transparent $border-shade  transparent transparent;
   }
 }
 
 .skills-box.is-visible {
-  transform: rotateY(0deg);
   opacity: 1;
-  transition: opacity 2s, transform 2s;
+  transition: opacity 2s;
   transform-style: preserve-3d;
 }
 
@@ -84,7 +96,7 @@
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   margin-bottom: 0px;
-  color: $blue-shade;
+  color: #036ae2e0;
 }
 
 .list {

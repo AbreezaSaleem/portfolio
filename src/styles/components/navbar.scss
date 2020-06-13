@@ -14,7 +14,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #000000d1;
+  background-color: #000000c4;
   height: 93%;
 }
 
@@ -34,12 +34,11 @@
 }
 
 /* Change the color of links on hover */
-.topnav a:hover {
+.topnav a:hover, .topnav a:active, .topnav a:focus {
   color: #0276ff !important;
 }
 
 /* Add a color to the active/current link */
 .topnav a.active {
-  background-color: #4CAF50;
   color: white;
 }

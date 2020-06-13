@@ -2,7 +2,9 @@ import React, { useState } from 'react';
 
 const Navbar = () => {
   const [ activeLink, setActiveLink ] = useState();
-
+  window.addEventListener('locationchange', function(){
+    console.log('location changed!');
+})
   return (
     <div className="topnav-container">
       <nav className="topnav">
