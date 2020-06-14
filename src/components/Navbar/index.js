@@ -1,17 +1,40 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 const Navbar = () => {
   const [ activeLink, setActiveLink ] = useState();
-  window.addEventListener('locationchange', function(){
-    console.log('location changed!');
-})
+  const navEl = useRef(null);
+
+  const handleActiveLink = value => {
+    setActiveLink(value);
+    const element = navEl.current;
+    element.className = "navbar-links";
+  }
+
+  const expandNavbar = event => {
+    event.preventDefault();
+    const element = navEl.current;
+    if (element.className === "navbar-links") {
+      element.className += " slidedown";
+    } else {
+      element.className = "navbar-links";
+    }
+  }
+
   return (
-    <div className="topnav-container">
+    <div id="navbar" className="topnav-container">
       <nav className="topnav">
-        <a style={{color: (activeLink === "home" ? "#0276ff" : "#fff")}} onClick={() => setActiveLink('home')} href="#home">Home</a>
-        <a style={{color: (activeLink === "skills" ? "#0276ff" : "#fff")}} onClick={() => setActiveLink('skills')} href="#skills">Skills</a>
-        <a style={{color: (activeLink === "projects" ? "#0276ff" : "#fff")}} onClick={() => setActiveLink('projects')} href="#projects">Projects</a>
-        <a style={{color: (activeLink === "contact" ? "#0276ff" : "#fff")}} onClick={() => setActiveLink('contact')} href="#contact">Contact</a>
+        <div className="icon">
+          <a onClick={expandNavbar}><FontAwesomeIcon icon={faBars} /></a>
+        </div>
+        <div ref={navEl} className="navbar-links">
+          <a onClick={() => handleActiveLink('home')} href="#home">Home</a>
+          <a onClick={() => handleActiveLink('about')} href="#about">About</a>
+          <a onClick={() => handleActiveLink('skills')} href="#skills">Skills</a>
+          <a onClick={() => handleActiveLink('projects')} href="#projects">Projects</a>
+          <a onClick={() => handleActiveLink('contact')} href="#contact">Contact</a>
+        </div>
       </nav>
     </div>
   );

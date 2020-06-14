@@ -5,6 +5,7 @@ import 'aos/dist/aos.css';
 import FloatingButton from './components/FloatingButton';
 import Navbar from './components/Navbar';
 import Intro from './sections/Intro';
+import About from './sections/About';
 import Skills from './sections/Skills';
 import Projects from './sections/Projects';
 
@@ -41,7 +42,7 @@ function App() {
       if (showNavbar()) {
         document.getElementsByClassName("topnav-container")[0].style.top = "0";
       } else {
-        document.getElementsByClassName("topnav-container")[0].style.top = "-55px";
+        document.getElementsByClassName("topnav-container")[0].style.top = "-42px";
       }
       showNavbarOnScroll(scrollNavbar);
     }
@@ -55,13 +56,11 @@ function App() {
 
   return (
     <>
-    <FloatingButton />
     <Navbar />
-    <div>
-      <Intro />
-      <Skills />
-      <Projects />
-    </div>
+    <Intro />
+    <About />
+    <Skills />
+    {/* <Projects />  */}
     </>
   );
 }

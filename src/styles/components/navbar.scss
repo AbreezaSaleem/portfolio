@@ -3,10 +3,9 @@
   width: 100%;
   z-index: 999;
   top: -55px;
-  transition: top 0.5s; 
-  height: 45px;
+  transition: top 0.5s ease; 
+  height: 50px;
   background-image: linear-gradient(90deg, #e02929 0%, #4d47f1 27%, #0493a7 64%, #32880d 83%, #e02929 100%);
-  overflow: hidden;
 }
 
 /* Add a black background color to the top navigation */
@@ -15,30 +14,71 @@
   justify-content: center;
   align-items: center;
   background-color: #000000c4;
-  height: 93%;
+  height: 83%;
+
+  @media screen and (max-width:600px) {
+    display: block;
+    div.navbar-links{ 
+      max-height: 0px; 
+      overflow: hidden;
+
+      a {
+
+        margin-right: 0px;
+      }
+    }
+    div.icon {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      height: 100%;
+    }
+  }
 }
 
-/* Style the links inside the navigation bar */
-.topnav a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 15px;
-  text-transform: uppercase;
-  margin-right: 80px;
-  font-family: 'Raleway', sans-serif;
-  transition: 0.5s; 
-  font-weight: 600;
+.navbar-links {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+  a {
+    height: inherit;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    transition: 0.5s ease; 
+    font-weight: 600;
+    margin-right: 80px;
+  
+    &:hover {
+      color: #0276ff;
+    }
+  }
 }
 
-/* Change the color of links on hover */
-.topnav a:hover, .topnav a:active, .topnav a:focus {
-  color: #0276ff !important;
+.slidedown {
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-height: 900px !important;
+  background-color: #212121de;
+  margin-top: 8px;
+  transition: max-height 2s ease;
 }
 
-/* Add a color to the active/current link */
-.topnav a.active {
-  color: white;
+.icon {
+  display: none;
+  a {
+    margin-right: 15px;
+    color: #f2f2f2 !important;
+    font-size: 20px;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
 }
