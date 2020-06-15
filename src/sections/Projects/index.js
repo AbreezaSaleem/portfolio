@@ -1,23 +1,37 @@
 import React from 'react';
 
-import ProjectTile from './ProjectTile';
-
-import projects from './data';
+import data from './data';
 
 const Projects = () => {
+
   return (
     <div id="projects" className="projects-container">
-      <div className="title title-color" data-aos="fade-right" data-aos-duration="600">Projects</div>
-      <div data-aos="fade-right" data-aos-duration="900" className="introduction">
-        <p className="title-color" style={{"marginTop": -20}}>I have worked mainly in front-end but I am transitioning to backend as well to become a fullstack developer.</p>
+      <div className="title project-title-color" data-aos="fade-right" data-aos-duration="600">
+        <div>Work Experiance</div>
+        <div className="divider" />
       </div>
-      
-      <div className="projects-list show-on-scroll">
-          <div className="timeline">
-            {projects.map((project, index) => {
-              return <ProjectTile key={`project-${index}`} project={project} />
-            })}
-          </div>
+      <div className="show-on-scroll projects-list">
+        {data.map((project, index) => {
+          const { tags=[], description, details=[] } = project;
+          return (
+            <div key={`project-${index}`} className="project project-title-color">
+              <div className="project-title"><h5>{project.name}</h5> <span>({project.year})</span></div>
+              <div className="tags">
+                {tags.map((tag, index) => {
+                  return (
+                    <span className="tag" key={`tag-${index}`}>{tag}</span>
+                  )
+                })}
+              </div>
+              <p className="project-description">{description}</p>
+              {/* <button className="view-more-btn">View More</button> */}
+              <ul className="project-detail">{details.map((detail, index) => {
+                return <li key={`detail-${index}`}>{detail}</li>
+              })}</ul>
+              <div className="secondary-divider" />
+            </div>
+          )
+        })}
       </div>
     </div>
   );

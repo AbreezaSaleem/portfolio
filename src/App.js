@@ -2,7 +2,6 @@ import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
 
-import FloatingButton from './components/FloatingButton';
 import Navbar from './components/Navbar';
 import Intro from './sections/Intro';
 import About from './sections/About';
@@ -60,7 +59,7 @@ function App() {
     <Intro />
     <About />
     <Skills />
-    {/* <Projects />  */}
+    <Projects /> 
     </>
   );
 }
