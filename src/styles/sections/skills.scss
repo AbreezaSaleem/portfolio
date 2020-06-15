@@ -37,19 +37,19 @@ $title-shade: #c5c5c5;
   grid-gap: 10px;
 
   /* Extra small devices (phones, 600px and down) */
-  @media only screen and (max-width: 600px) { grid-template-columns: repeat(3, max-content); }
+  @media screen and (max-width: 600px) { grid-template-columns: repeat(3, max-content); }
 
   /* Small devices (portrait tablets and large phones, 600px and up) */
-  @media only screen and (min-width: 600px) { grid-template-columns: repeat(3, max-content); }
+  @media screen and (min-width: 600px) { grid-template-columns: repeat(3, max-content); }
 
   /* Medium devices (landscape tablets, 768px and up) */
-  @media only screen and (min-width: 768px) { grid-template-columns: repeat(3, max-content) }
+  @media screen and (min-width: 768px) { grid-template-columns: repeat(3, max-content) }
   
   /* Medium devices (landscape tablets, 1024px and up) */
-  @media only screen and (min-width: 1024) { grid-template-columns: repeat(6, max-content) }
+  @media screen and (min-width: 1024) { grid-template-columns: repeat(6, max-content) }
 
   /* Large devices (laptops/desktops, 992px and up) */
-  @media only screen and (min-width: 992px) { grid-template-columns: repeat(6, max-content) }
+  @media screen and (min-width: 992px) { grid-template-columns: repeat(6, max-content) }
 
   span {
     border: 1px solid $title-shade;
@@ -63,7 +63,7 @@ $title-shade: #c5c5c5;
     width: fit-content;
 
     /* Medium devices (landscape tablets, 1024px and up) */
-    @media only screen and (min-width: 1024) { margin-right: 25px; }
+    @media screen and (min-width: 1024) { margin-right: 25px; }
 
     &:hover {
       cursor: pointer;
