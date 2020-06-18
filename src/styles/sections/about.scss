@@ -1,13 +1,12 @@
 $title-shade: #dadada;
 $border-shade: #4d4e4e63;
 $hover-shade: #075d9a;
-$background-shade: #0e0e0ef5;
 
 .about-container {
   cursor: pointer;
   padding: 60px 0px 45px 0px;
   cursor: initial;
-  background-color: $background-shade;
+  background-color: $background-shade-light;
 }
 
 .about-title-color {

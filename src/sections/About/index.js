@@ -1,6 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLinkedin, faGithub, faTwitter } from '@fortawesome/free-brands-svg-icons'
+import { faLinkedin, faGithub, faTwitter } from '@fortawesome/free-brands-svg-icons';
 
 import me from '../../images/me.jpeg';
 

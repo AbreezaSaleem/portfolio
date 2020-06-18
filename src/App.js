@@ -3,10 +3,13 @@ import AOS from 'aos';
 import 'aos/dist/aos.css'; 
 
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+
 import Intro from './sections/Intro';
 import About from './sections/About';
 import Skills from './sections/Skills';
 import Projects from './sections/Projects';
+import Contact from './sections/Contact';
 
 import { isElementInViewport, showNavbar } from './utils';
 
@@ -60,6 +63,8 @@ function App() {
     <About />
     <Skills />
     <Projects /> 
+    <Contact />
+    <Footer />
     </>
   );
 }

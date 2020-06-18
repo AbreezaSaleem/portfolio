@@ -4,7 +4,7 @@ $title-shade: #c1c1c1;
   padding: 60px 0px;
   min-height: 100vh;
   height: 100%;
-  background-color: $background-shade;
+  background-color: $background-shade-light;
   color: $title-shade;
 }
 
@@ -35,8 +35,8 @@ $title-shade: #c1c1c1;
 }
 
 .projects-list.is-visible {
-  max-height: 2000px; // !
-  transition: max-height 3s ease-in;
+  max-height: 2500px; // !
+  transition: max-height 2s ease-in;
 }
 
 .project {
@@ -112,22 +112,5 @@ $title-shade: #c1c1c1;
 
     /* Large devices (laptops/desktops, 992px and up) */
     @media screen and (min-width: 992px) { content: "   •   " }
-  }
-}
-
-.view-more-btn {
-  font-family: 'Montserrat', sans-serif;
-  background: transparent;
-  height: 30px;
-  width: 87px;
-  color: #fff;
-  font-size: 13px;
-  transition: 0.3s;
-  border: 1px solid #fff;
-  border-radius: 5px;
-
-  &:hover {
-    background-color: $title-shade;
-    border-color: $title-shade;
   }
 }

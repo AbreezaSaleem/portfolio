@@ -2,20 +2,25 @@ html {
   scroll-behavior: smooth;
 }
 
+$background-shade-light: #0e0e0ef5;
+$background-shade-dark: #080808fc ;
 $white-shade: #cecece;
 $blue-shade: #153669;
+$red-shade: #7d0808c4;
 $golden-shade: #cc9d0a;
 $grey-shade: #bdbdbd26;
 
 // Components
 @import "components/floatingButton";
 @import "components/navbar";
+@import "components/footer";
 
 // Sections
 @import "sections/intro";
 @import "sections/about";
 @import "sections/skills";
 @import "sections/projects";
+@import "sections/contact";
 
 // Shared styles
 
