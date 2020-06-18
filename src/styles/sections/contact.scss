@@ -1,0 +1,91 @@
+
+$title-shade: #c5c5c5;
+
+.contact-container {
+  background-color: $background-shade-dark;
+  padding: 60px 0px 80px 0px;
+}
+
+.contact-title-color {
+  color: $title-shade;
+}
+
+.contact-message {
+  margin-top: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 18px;
+  text-transform: none;
+  font-style: italic;
+  text-align: center;
+  width: 55%;
+}
+
+.contact-me {
+  margin: 0 auto;
+  width: 35%;
+  font-family: 'Montserrat', sans-serif;
+
+  /* Extra small devices (phones, 600px and down) */
+  @media screen and (max-width: 600px) { width: 80%; }
+
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media screen and (min-width: 600px) { width: 80%; }
+
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media screen and (min-width: 768px) { width: 45%; }
+  
+  /* Medium devices (landscape tablets, 1024px and up) */
+  @media screen and (min-width: 1024) { width: 35%; }
+
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media screen and (min-width: 992px) { width: 35%; }
+  
+  form {
+    margin-top: 65px;
+    display: flex;
+    flex-direction: column;
+    
+    input:not([type="submit"]), textarea {
+      color: #c1c1c1;
+      background-color: #191818f5;
+      border: 0px;
+      margin-bottom: 20px;
+      border-radius: 6px;
+      padding: 10px;
+      font-size: 15px;
+
+      &:nth-child(3) {
+        height: 140px;
+      }
+
+      &::placeholder {
+        color: #7b7a7a;
+        font-size: 13px;
+        text-transform: uppercase;
+        vertical-align: text-top;
+        font-style: italic;
+        font-weight: 400;
+      }
+    }
+
+    input[type="submit"] {
+      background: #7d0808c4;
+      height: 35px;
+      width: 87px;
+      color: $title-shade;
+      font-size: 14px;
+      transition: 0.3s;
+      text-transform: uppercase;
+      font-weight: 400;
+      border-radius: 5px;
+      border: none;
+      float: right;
+
+      &:hover {
+        background-color: #730d0d;
+      }
+    }
+  }
+}
