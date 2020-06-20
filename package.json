@@ -1,6 +1,6 @@
 {
-  "name": "portfolio", 
-  "homepage": "http://abreezasaleem.github.io/portfolio", 
+  "name": "abreezasaleem.github.io", 
+  "homepage": "https://abreezasaleem.github.io", 
   "version": "0.1.0",
   "private": true,
   "dependencies": {
