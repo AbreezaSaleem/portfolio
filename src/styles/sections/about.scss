@@ -15,14 +15,14 @@ $hover-shade: #075d9a;
 
 .image-container {
   clip-path: polygon(20% 0%, 77% 0, 100% 20%, 100% 57%, 80% 82%, 19% 82%, 0 59%, 0% 20%);
-  width: 274px;
+  width: 280px;
   height: 364px;
-  background: #075d9a8c;
+  background: #9a072942;
   display: flex;
   justify-content: center;
 
   img {
-    width: 265px;
+    width: 270px;
     clip-path: polygon(20% 0%, 77% 0, 100% 20%, 100% 57%, 80% 82%, 19% 82%, 0 59%, 0% 20%);
   }
 }
