@@ -8,16 +8,24 @@ const About = () => {
 
   return (
     <div id="about" className="about-container">
-      <div data-aos="fade-right" data-aos-duration="1500" >
+      <div data-aos="fade-right" data-aos-duration="900" >
         <div className="title about-title-color">
           <div>About Me</div>
           <div className="divider" />
         </div>
-        <div className="introduction">
+        <div className="about-introduction">
           <div className="image-container"><img src={me} /></div>
-          <p style={{marginTop: -40}} className="about-title-color">I have been in the web development insdustry for two years now in which I've had the opportunity to learn so much. In case this goes in a second line. Because you never know.</p>
-          <div className="dot-divider" />
-          <p className="education about-title-color">I graduated from <span style={{fontWeight: 600}}>Lahore University of Management Sciences</span> with a Bacheler's in Computer Science in 2018.</p>
+          <div className="introduction-text">
+            <p style={{marginTop: -20}} className="about-title-color">
+              Hi, I am Abreeza. I am a fullstack Javascript developer, who has gained most of her knowledge about the language from the book 'You don't know Javascript' by Kyle Simpson. 
+              In my spare time I either watch Netflix or
+            </p>
+            <div className="dot-divider" />
+            <p className="education about-title-color">I currently work at <span style={{fontWeight: 600}}>MailMunch</span> as a Fullstack Developer and I graduated from <span style={{fontWeight: 600}}>Lahore University of Management Sciences</span> with a Bacheler's in Computer Science in 2018.</p>
+          </div>
+        </div>
+        <div className="secondary-divider-container">
+          <div className="secondary-divider" />
         </div>
         <div className="icons-container">
           <a href="https://www.linkedin.com/in/abreezasaleem/" target="_blank"><FontAwesomeIcon icon={faLinkedin} size="2x" /></a>

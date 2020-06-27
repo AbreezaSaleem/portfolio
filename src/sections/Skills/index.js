@@ -4,12 +4,12 @@ const Skills = () => {
 
   return (
     <div id="skills" className="skills-container">
-      <div data-aos="fade-right" data-aos-duration="1500" >
+      <div data-aos="fade-right" data-aos-duration="900" >
         <div className="title skills-title-color">
           <div>Technical Skills</div>
           <div className="divider" />
         </div>
-        <div style={{marginTop: 10}} className="introduction">
+        <div style={{marginTop: 10}} className="skills-introduction">
           <p className="skills-title-color">I've worked with a wide variety of programming languages. For web applications I mainly use Javascript and its popular. Other than that I have worked with C++ and LLVM. I've also used Python in a few projects.</p>
         </div>
         <div className="skills-list">

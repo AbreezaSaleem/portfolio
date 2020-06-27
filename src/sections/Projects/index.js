@@ -31,7 +31,6 @@ const Projects = () => {
               </div>
               <div className="project-details">
                 <p>{description}</p>
-                {/* <button className="view-more-btn">View More</button> */}
                 <p>{details}</p>
               </div>
               <div className="secondary-divider" />

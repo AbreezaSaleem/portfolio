@@ -1,8 +1,8 @@
 // Helper function from: http://stackoverflow.com/a/7557433/274826
 const isElementInViewport = el => {
   const rect = el.getBoundingClientRect();
-  const bottom = 2  * rect.bottom
-  const top = 2  * rect.top
+  const bottom = rect.bottom
+  const top = 1.7 * rect.top
   
   return (
     (top <= 0

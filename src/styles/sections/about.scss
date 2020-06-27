@@ -4,7 +4,7 @@ $hover-shade: #075d9a;
 
 .about-container {
   cursor: pointer;
-  padding: 60px 0px 45px 0px;
+  padding: 60px 0px 60px 0px;
   cursor: initial;
   background-color: $background-shade-light;
 }
@@ -27,11 +27,61 @@ $hover-shade: #075d9a;
   }
 }
 
+.about-introduction {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+
+  p {
+    text-align: center;
+    font-size: 18px; // !
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    margin-bottom: 0px;
+  }
+
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media screen and (min-width: 768px) { 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+  }
+}
+
+.introduction-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media screen and (min-width: 768px) { 
+    width: 40%;
+    margin: 0 60px;
+  }
+}
+
 .education {
   font-family: 'Montserrat', sans-serif;
 
   div > h3 {
     font-weight: 300;
+  }
+}
+
+.secondary-divider-container {
+  display: flex;
+  justify-content: center;
+
+  div {
+    width: 900px;
+    margin: 15px 0px 15px 0px;
   }
 }
 

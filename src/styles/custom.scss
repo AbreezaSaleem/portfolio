@@ -24,24 +24,6 @@ $grey-shade: #bdbdbd26;
 
 // Shared styles
 
-.introduction {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 30px;
-
-  p {
-    text-align: center;
-    font-size: 18px; // !
-    font-family: 'Montserrat', sans-serif;
-    width: 65%;
-    font-weight: 300;
-    font-style: italic;
-    margin-bottom: 0px;
-  }
-}
-
 .title {
   width: 100%;
   display: flex;
