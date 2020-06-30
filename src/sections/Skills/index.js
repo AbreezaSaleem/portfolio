@@ -10,7 +10,11 @@ const Skills = () => {
           <div className="divider" />
         </div>
         <div style={{marginTop: 10}} className="skills-introduction">
-          <p className="skills-title-color">I've worked with a wide variety of programming languages. For web applications I mainly use Javascript and its popular. Other than that I have worked with C++ and LLVM. I've also used Python in a few projects.</p>
+          <p className="skills-title-color">
+            For web applications I mainly use Javascript with React for front-end and Node.js for back-end. 
+            I am well-versed in the fundamental concepts of the language that has proven to be very benificial.
+            Other than that, I have experience with C++ and LLVM. I've also used Python in a few projects.
+          </p>
         </div>
         <div className="skills-list">
           <h4>Frequently Used</h4>

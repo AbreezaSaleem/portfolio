@@ -16,12 +16,13 @@ const About = () => {
         <div className="about-introduction">
           <div className="image-container"><img src={me} /></div>
           <div className="introduction-text">
-            <p style={{marginTop: -20}} className="about-title-color">
-              Hi, I am Abreeza. I am a fullstack Javascript developer, who has gained most of her knowledge about the language from the book 'You don't know Javascript' by Kyle Simpson. 
-              In my spare time I either watch Netflix or
+            <p className="about-me about-title-color">
+              Hi, I am Abreeza. I am a Full-stack software developer with two years of industry experiance.
+              I work mainly in web development with Javascirpt as my preferred choice of language and over the past few
+              years I've successfully aided in building multiple websites (scroll down to learn more 👇🏼).
             </p>
             <div className="dot-divider" />
-            <p className="education about-title-color">I currently work at <span style={{fontWeight: 600}}>MailMunch</span> as a Fullstack Developer and I graduated from <span style={{fontWeight: 600}}>Lahore University of Management Sciences</span> with a Bacheler's in Computer Science in 2018.</p>
+            <p className="education about-title-color">I am currently working at <a href="https://www.mailmunch.com/" target="_blank">MailMunch</a> as a Fullstack Developer and I graduated from <a href="https://www.lums.edu.pk/" target="_blank">Lahore University of Management Sciences</a> with a Bacheler's in Computer Science in 2018.</p>
           </div>
         </div>
         <div className="secondary-divider-container">

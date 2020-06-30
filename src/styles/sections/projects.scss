@@ -35,7 +35,7 @@ $title-shade: #c1c1c1;
 }
 
 .projects-list.is-visible {
-  max-height: 2500px; // !
+  max-height: 4500px; // !
   transition: max-height 2s ease-in;
 }
 
@@ -85,17 +85,23 @@ $title-shade: #c1c1c1;
 .project-details {
   font-weight: 300;
   margin-top: 10px;
+  font-family: 'Montserrat', sans-serif;
   
   p:nth-child(1) {
-    margin-bottom: 10px;
-    font-size: 17px;
+    margin-bottom: 15px;
+    font-size: 16px;
   }
-  p:nth-child(2) {
-    text-align: center;
-    margin-bottom: 0px;
+  p:nth-child(n+2) {
     font-style: italic;
     text-align: center;
-    font-size: 16px;
+    margin-bottom: 5px;
+    text-align: center;
+    font-size: 15px;
+
+    &::after {
+      content:"\a";
+      white-space: pre;
+    }
   }
 }
 

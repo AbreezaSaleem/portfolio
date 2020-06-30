@@ -16,7 +16,7 @@ const Projects = () => {
       </div>
       <div className="show-on-scroll projects-list">
         {data.map((project, index) => {
-          const { tags=[], link, description, details } = project;
+          const { tags=[], link, description, details=[] } = project;
           return (
             <div key={`project-${index}`} className="project project-title-color">
               <div onClick={() => openProject(link)} className="project-title">
@@ -31,7 +31,7 @@ const Projects = () => {
               </div>
               <div className="project-details">
                 <p>{description}</p>
-                <p>{details}</p>
+                {details.map(detail => <p>{detail}</p>)}
               </div>
               <div className="secondary-divider" />
             </div>
