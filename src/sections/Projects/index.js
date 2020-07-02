@@ -11,7 +11,7 @@ const Projects = () => {
   return (
     <div id="projects" className="projects-container">
       <div className="title project-title-color" data-aos="fade-right" data-aos-duration="600">
-        <div>Work Experiance</div>
+        <div>Work Experience</div>
         <div className="divider" />
       </div>
       <div className="show-on-scroll projects-list">
