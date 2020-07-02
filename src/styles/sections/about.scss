@@ -47,7 +47,7 @@ $hover-shade: #075d9a;
   }
 
   /* Medium devices (landscape tablets, 768px and up) */
-  @media screen and (min-width: 768px) { 
+  @media screen and (min-width: 1024px) { 
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -64,7 +64,7 @@ $hover-shade: #075d9a;
   width: 80%;
 
   /* Medium devices (landscape tablets, 768px and up) */
-  @media screen and (min-width: 768px) { 
+  @media screen and (min-width: 1024px) { 
     width: 40%;
     margin: 0 60px;
   }
@@ -73,7 +73,10 @@ $hover-shade: #075d9a;
     margin-top: -30px;
 
     /* Medium devices (landscape tablets, 768px and up) */
-    @media screen and (min-width: 768px) { margin-top: -80px; }
+    @media screen and (min-width: 768px) { margin-top: -40px; }
+
+    /* Medium devices (landscape tablets, 768px and up) */
+    @media screen and (min-width: 1024px) { margin-top: -80px; }
   }
 }
 
