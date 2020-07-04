@@ -18,8 +18,8 @@ export default [
     description: "A 16-week online programme to helps its users change their lifestyle and manage their diabetes.",
     details:[
       `I created a chat module in ReactJS containing features like last seen, media files support, archive/unarchive conversation.
-      I also bought down code duplication from 34% to 11% by formulating a reusable UI library on top of Material-UI components (Figures reported by SonarQube)
-      And I set up unit testing from scratch using Jest/Enzyme in the application, attaining a code coverage of 85%`
+      I also bought down code duplication from 34% to 11% by formulating a reusable UI library on top of Material-UI components (figures reported by SonarQube).
+      And I set up unit testing from scratch using Jest/Enzyme in the application, attaining a code coverage of 85%.`
     ],
     link: "https://en.droobihealth.com/",
     tags: ["React", "Redux", "Jest/Enzyme", "Webpack"],
