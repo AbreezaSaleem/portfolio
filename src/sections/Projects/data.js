@@ -3,9 +3,10 @@ export default [
     name: "MailMunch",
     description: "A digital marketing service that captures leads from your website and converts visitors into life-long readers, email subscribers and customers.  ",
     details:
-      [`I developed multiple features for the website. The prominent ones included a custom floating action button builder that was used to trigger any popups embedded within a page. 
-      A countdown timer with the option of respecting either the visitors timezone or a specific chosen timezone. A google font picker, powered by WebfontLoader for lazy loading,
-      that gave the managers a huge variety of fonts to choose from for their campaigns.`,
+      [`I developed multiple features for the website. 
+      The prominent ones included a custom floating action button builder that was used to trigger any popups embedded within a page. 
+      A countdown timer with the option of respecting either the visitor's timezone or a specifically chosen timezone. 
+      A google font picker, powered by WebfontLoader for lazy loading, that gave the managers a huge variety of fonts to choose from for their campaigns.`,
       `Apart from that I also set up Cypress for the codebase that greatly sped up the testing process.`
     ],
     link: "https://www.mailmunch.com/",
@@ -28,7 +29,8 @@ export default [
     name: "Covid-19",
     description: "A Covid Relief website that gave the user an option of selecting a city from the dropdown and displaying the charities available for that city via Google Maps.",
     details:[`
-      I Co-authored in a website that was powered by a Node.js to serve a React SPA. The application the consumed Twilio SMS API to send charity details to users upon their request.
+      I co-authored in a website that was powered by a Node.js to serve a React SPA. 
+      The application consumed Twilio SMS API to send charity details to users upon their request.  
     `],
     link: "https://pacific-headland-81140.herokuapp.com/",
     tags: ["React", "Twillio"],
@@ -68,7 +70,7 @@ export default [
     name: "Plagersim Detector Tool",
     description: "A plagiarism detection tool that generates Program Dependence Graphs of all uploaded programs/assignments and compares each pair by using subgraph isomorphism to detect disguised code changes.",
     details:[
-      `Developed a plagiarism detection tool that generated Program Dependance Graphs of two source codes and compared them both using subgraph isomorphism to detect disguised code changes. Successfully tested tool on common disguises like statement reordering, variable renaming, control replacement and code insertion.`
+      `Developed a plagiarism detection tool that generated Program Dependence Graphs of two source codes and compared them both using subgraph isomorphism to detect disguised code changes. Successfully tested tool on common disguises like statement reordering, variable renaming, control replacement, and code insertion.`
     ],
     link: "https://github.com/AbreezaSaleem/ProgramDependenceGraph",
     tags: ["C++", "LLVM"],
