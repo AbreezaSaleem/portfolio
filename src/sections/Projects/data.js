@@ -27,7 +27,7 @@ export default [
   },
   {
     name: "Covid-19",
-    description: "A Covid Relief website that gave the user an option of selecting a city from the dropdown and displaying the charities available for that city via Google Maps.",
+    description: "A Covid Relief website that gave the user an option of selecting a city and displaying the charities available for that city via Google Maps.",
     details:[`
       I co-authored in a website that was powered by a Node.js to serve a React SPA. 
       The application consumed Twilio SMS API to send charity details to users upon their request.  
