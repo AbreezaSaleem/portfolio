@@ -18,7 +18,7 @@ const About = () => {
           <div className="introduction-text">
             <p className="about-me about-title-color">
             Hi, I am Abreeza. I am a Full-stack software developer with two years of industry experience. 
-            I work mainly in web development with Javascript as my preferred choice of language and over the past few years, 
+            I work mainly with Javascript as my preferred choice of language and over the past few years, 
             I've successfully aided in building multiple websites (scroll down to learn more 👇🏼).
             </p>
             <div className="dot-divider" />
