@@ -1,5 +1,15 @@
 export default [
   {
+    name: "Shadiyana",
+    description: "An online platform that simplifies wedding planning by connecting couples with top vendors, venues, and services",
+    details:
+      [`I created Shadiyana.pk from scratch in just four months using Next.js for the front-end and Node.js for the back-end. During development, I designed complex list view pages, crafted an efficient database schema, and ensured the website was fully responsive. Later on, I developed countless features and mentored developers under my supervision.`
+    ],
+    link: "https://www.shadiyana.pk//",
+    tags: ["NextJS", "Node.js", "AWS"],
+    year: '2023-2024',
+  },
+  {
     name: "Retailo",
     description: "An online ordering platform for retailers to buy day-to-day inventory for their shops",
     details:
@@ -8,16 +18,6 @@ export default [
     link: "https://www.mailmunch.com/",
     tags: ["React", "Redux", "Redux-Saga", "GraphQL", "Sequalize", "Nodejs", "Cypress"],
     year: '2021-2022',
-  },
-  {
-    name: "Shadiyana",
-    description: "An online platform that simplifies wedding planning by connecting couples with top vendors, venues, and services",
-    details:
-      [`I created Shadiyana.pk from scratch in just four months using Next.js for the front-end and Node.js for the back-end. During development, I designed complex list view pages, crafted an efficient database schema, and ensured the website was fully responsive.`
-    ],
-    link: "https://www.shadiyana.pk//",
-    tags: ["NextJS", "Node.js", "AWS"],
-    year: '2020-2021',
   },
   {
     name: "MailMunch",
