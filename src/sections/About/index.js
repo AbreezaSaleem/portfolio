@@ -17,7 +17,7 @@ const About = () => {
           <div className="image-container"><img src={me} /></div>
           <div className="introduction-text">
             <p className="about-me about-title-color">
-            Hi, I am Abreeza. I am a Full-stack software engineer with over three years of industry experience. 
+            Hi, I am Abreeza. I am a Full-stack software engineer with over four years of industry experience. 
             I work mainly with Javascript as my preferred choice of language and over the past few years, 
             I've successfully aided in building multiple applications (scroll down to learn more 👇🏼).
             </p>
