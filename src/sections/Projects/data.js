@@ -6,7 +6,7 @@ export default [
       [`I created Shadiyana.pk from scratch in just four months using Next.js for the front-end and Node.js for the back-end. During development, I designed complex list view pages, crafted an efficient database schema, and ensured the website was fully responsive. Later on, I developed countless features and mentored developers under my supervision.`
     ],
     link: "https://www.shadiyana.pk//",
-    tags: ["NextJS", "Node.js", "AWS"],
+    tags: ["Typescript", "NextJS", "React Native", "Node.js", "AWS", "Socket.IO", "Firebase", "PostgreSQL"],
     year: '2023-2024',
   },
   {
@@ -16,7 +16,7 @@ export default [
       [`As a Senior Software Engineer at Retailo, I led a team to develop an end-to-end chat application using React Native and Firebase. I configured AWS EC2 instances, managed environment variables with Amazon Secrets Manager, and set up CloudWatch for log monitoring. Additionally, I reviewed over 100 pull requests, enhancing code quality by identifying and fixing bad coding practices and potential bugs.`,
     ],
     link: "https://www.mailmunch.com/",
-    tags: ["React", "Redux", "Redux-Saga", "GraphQL", "Sequalize", "Nodejs", "Cypress"],
+    tags: ["Typescript", "React",  "React Native", "Sequalize", "Nodejs", "Cypress", "Docker", "MongoDB"],
     year: '2021-2022',
   },
   {
@@ -30,7 +30,7 @@ export default [
       `Apart from that I also set up Cypress for the codebase that greatly sped up the testing process.`
     ],
     link: "https://www.mailmunch.com/",
-    tags: ["React", "Redux", "Redux-Saga", "GraphQL", "Sequalize", "Nodejs", "Cypress"],
+    tags: ["Typescript", "React",  "React Native", "Redux", "Redux-Saga", "GraphQL", "Sequalize", "Nodejs", "Cypress", "MongoDB"],
     year: '2020-2021',
   },
   {
