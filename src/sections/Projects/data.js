@@ -13,7 +13,7 @@ export default [
     name: "Retailo",
     description: "An online ordering platform for retailers to buy day-to-day inventory for their shops",
     details:
-      [`As a Senior Software Engineer at Retailo, I led a team to develop an end-to-end chat application using React Native and Firebase. I configured AWS EC2 instances, managed environment variables with Amazon Secrets Manager, and set up CloudWatch for log monitoring. Additionally, I reviewed over 100 pull requests, enhancing code quality by identifying and fixing bad coding practices and potential bugs.`,
+      [`At Retailo, I was among the first developers, contributing to the app's growth from its early stages to a robust product. I developed critical features on both the backend and frontend, which had a significant impact on hundreds of users across multiple countries. Additionally, I focused on optimizing the app's performance, ensuring it ran smoothly even on low-end devices.`,
     ],
     link: "https://www.mailmunch.com/",
     tags: ["Typescript", "React",  "React Native", "Sequalize", "Nodejs", "Cypress", "Docker", "MongoDB"],
